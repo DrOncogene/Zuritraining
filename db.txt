@@ -1,0 +1,20 @@
+{
+    "5032722117": {
+        "first": "nasir",
+        "last": "rasheed",
+        "email": "nas@mail.com",
+        "password": "rasheed",
+        "balance": 5000,
+        "complaints": [
+            "I withdrew and was debited but there was no cash released"
+        ]
+    },
+    "9409534460": {
+        "first": "yusuf",
+        "last": "rasheed",
+        "email": "yus@mail.com",
+        "password": "rasheed",
+        "balance": 4000,
+        "complaints": []
+    }
+}
