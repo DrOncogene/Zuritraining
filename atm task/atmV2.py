@@ -14,7 +14,6 @@ with open('db.txt') as database:
   if content != '':  
     users_db = json.loads(content)
 
-print(type(users_db))
 def init():
   print('================ Welcome to NASBank ================')
   print('1. Login       2. Register')
