@@ -113,7 +113,7 @@ def withdraw(account):
   # check if there are enough funds in the account
   if amount <= user['balance']:
     if amount > 0:
-      user['balance'] = user['balance'] - amount
+      user['balance'] -= amount
       users_db[account] = user
       save_to_db()
       print('Take your cash, thank you for banking with us')
@@ -134,7 +134,7 @@ def deposit(account):
   print(f'Your balance: #{user["balance"]}')
   amount = int(input('Enter an amount to deposit: \n'))
   if amount > 0:
-    user['balance'] = user['balance'] + amount
+    user['balance'] += amount
     users_db[account] = user
     save_to_db()
     print(f'#{amount} successfully added, thank you for banking with us')
@@ -191,4 +191,5 @@ def save_to_db():
     print(json.dumps(users_db, indent=4), file=usersDB)
 
 
-init()
+if __name__ == '__main__':
+  init()
