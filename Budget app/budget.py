@@ -26,7 +26,7 @@ class Budget():
       print('Invalid amount entered')
 
   def __str__(self):
-    return f'Name: {self.category}, balance {self.balance}'
+    return f'Name: {self.category}, Balance {self.balance}'
 
 # # code to test the class
 # fashion = Budget('fashion', 0)
