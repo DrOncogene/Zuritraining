@@ -3,7 +3,7 @@ class Budget():
 
   @staticmethod
   def transfer_fund(fro, to, amount: int) -> None:
-    if (amount > 0) and (amount <= fro.balance):
+    if (0 < amount <= fro.balance):
       fro.balance -= amount
       to.balance += amount
     else:
